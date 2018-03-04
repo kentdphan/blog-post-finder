@@ -2,29 +2,13 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  /*background-color: #222;*/
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
 .App-title {
   font-size: 1.5em;
 }
 
 .App-intro {
   font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  margin: 10px;
 }
 
 body {
@@ -35,6 +19,10 @@ body {
     box-sizing: border-box;
     margin:auto;
     max-width:300px;
+}
+
+form {
+    margin-bottom: 30px;
 }
 
 form.search-container input[type=text] {
@@ -66,4 +54,39 @@ form.search-container::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.BlogPost {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.BlogPost:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.BlogPost h1{
+   font-family: Teko;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 2em;
+   text-align: left;
+   padding-left: 10px;
+}
+
+.BlogPost #description, #userInfo {
+  font-family: Roboto Slab;
+  color: grey;
+  font-size: 0.9em;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.BlogPost #userInfo {
+  
+}
+
+.BlogPost img:last-child {
+  border-radius: 50%;
 }
